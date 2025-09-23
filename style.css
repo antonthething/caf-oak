@@ -1,0 +1,12 @@
+{
+    padding: 0;
+    margin: 0;
+}
+main
+{
+    background-color: rgb(41, 154, 154);
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
