@@ -2,14 +2,14 @@
 <html lang="sv">
 <main>
 <head>
-    <header class="header">
+    <header class="footer">
         <nav>
-            <ul class="header">
-                <li><a href="#om-oss">Om oss</a></li>
-                <li><a href = "#meny">Meny</a></li>
-                <li><a href = "#öppettider">öppettider</a></li>
-                <li><a href = "#vart">hitta hit</a></li>
-                <li><a href = "#kontakt">Kontakt</a></li>
+            <ul class="footer">
+                <li><a href="#om-oss"><header class="vit">Om oss</header></a></li>
+                <li><a href = "#meny"><header class="vit">Meny</header></a></li>
+                <li><a href = "#öppettider"><header class="vit">Öppettider</header></a></li>
+                <li><a href = "#vart"><header class="vit">hitta hit</header></a></li>
+                <li><a href = "#kontakt"><header class="vit">Kontakt</header></a></li>
             </ul>
         </nav>
     </header>
@@ -21,15 +21,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="menu-omoss">
     <section"title">
-        <u><h1><center>Café Oak</center></h1></u>   
+      <header class="färg1"><u><h1><center>Café Oak</center></h1></u>   
     </section>
 
     <section>
         <header class="Meny">
             <section"Meny">
                 
-                <h2><center>Om oss</center></h4>
-                    <p><center><strong>Café oak is made by the Barkbound group set up by Ekan Creations!. Here you can sit, chill and talk with your friends. Or grab some delicous home made goodies to much on!</strong></center></p>
+            <header class="färg2"><h2><center>Om oss</center></h4>
+              <header class="färg2"><p><center><strong>Café oak is made by the Barkbound group set up by Ekan Creations!. Here you can sit, chill and talk with your friends. Or grab some delicous home made goodies to much on!</strong></center></p>
 </div>
 <div class="gotta">
                 <h2>Vår meny</h2>
@@ -45,7 +45,7 @@
         </section>
 
         <section>
-            <header class="gotta1">
+          <div class="gotta1">
                         <u><h3>Gotta</h3></u>
                             <p>bs som jag har bakat eller nå idk</p>
                             
@@ -54,10 +54,11 @@
                     <li>3. unnamed bulle 2 45kr</li>
                     <li>4. bakelse - 15Kr</li>
                 </header>
+              </div>
             </section>
 
             <section>
-                <header class="gotta2">
+              <div class="gotta2">
                             <li><h3>öppettider</h3></li>
                                 <p>när vi har öppet och sånt</p>
                                 
@@ -66,11 +67,13 @@
                         <li>placeholder</li>
                         <li>placeholder</li>
                     </header>
+                  </div>
                 </section>
 
                 <section>
+                  
                   <header class="bottompart">
-                              <li><h2><center><bold>Hitta hit</bold></center></h2></li>
+                    <header class="vit"><li><h2><center><bold>Hitta hit</bold></center></h2></li>
                                   
                           <li></li>
                           <li><h3><center>placeholder</center></h3>></li>
@@ -115,17 +118,19 @@
   margin: 0px;
   
 }
-.header {
+.footer {
   background-color: #582811;
   text-decoration-color: antiquewhite;
   padding: 10px;
   margin: 0px;
+  align-items: center;
   display: flex;
     flex-direction: row;
     gap: 132px;
+    
 }
 
-}
+
 .gotta {
   border-bottom: 5px solid #582811;
   padding-bottom: 2px;
@@ -138,8 +143,16 @@
 }
 .gotta2 {
   border-bottom: 5px solid #582811;
-  
   padding-bottom: 2px;
   margin-bottom: 0px;
+}
+.färg1 {
+color: rgb(151, 103, 15);
+}
+.färg2 {
+color: rgb(62, 42, 4);
+}
+.vit {
+color: rgb(255, 255, 255);
 }
   </style>
