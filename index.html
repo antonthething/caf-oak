@@ -1,44 +1,66 @@
+<!-- Du har förstått grunderna, och byggt en fungerande webbsida, vilket är bra. 
+Men du har ingen riktig struktur eller formatering i koden. 
+Vissa rader är indenterade, andra inte. Du blandar svenska och engelska i klassnamn samt hur de skrivs. 
+Olika taggar är utplacerade lite här och var och följer ingen struktur över hur en webbsida ska byggas.
+När jag validerar din kod får jag uppemot 65 fel totalt. Jag rekommenderar starkt att du övar lite mer på denna  -->
+
+
 <!DOCTYPE html>
 <html lang="sv">
+
+  <!-- <main> ska ligga i <body>. Just nu har du start-taggen utanför <body>. -->
+<main>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café Oak</title>
+  <!-- Denna del ska inte ligga i <head>. ALL HTML ska ALLTID ligga i <body>. -->
+    <header class="footer">
+        <nav>
+            <ul class="footer">
+                <li><a href="#om-oss"><header class="vit">Om oss</header></a></li>
+                <li><a href = "#meny"><header class="vit">Meny</header></a></li>
+                <li><a href = "#öppettider"><header class="vit">Öppettider</header></a></li>
+                <li><a href = "#vart"><header class="vit">hitta hit</header></a></li>
+                <li><a href = "#kontakt"><header class="vit">Kontakt</header></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Du har med <!DOCTYPE html>, <html lang="sv" och <head>, vilket är bra. Däremot fattas flera viktiga meta-taggar innan för <head> som behövs på webbsidan. -->
+    <!-- Du använder heller inte css filen och har ingen title -->
+    
 </head>
 
 <body>
-  
-
-
-
-  <header class="footer">
-    <nav>
-        <ul class="footer">
-            <li><a href="#om-oss"><header class="vit">Om oss</header></a></li>
-            <li><a href = "#meny"><header class="vit">Meny</header></a></li>
-            <li><a href = "#öppettider"><header class="vit">Öppettider</header></a></li>
-            <li><a href = "#vart"><header class="vit">hitta hit</header></a></li>
-            <li><a href = "#kontakt"><header class="vit">Kontakt</header></a></li>
-        </ul>
-    </nav>
-</header>
     
+  <!-- Dessa två meta-taggar ska ligga i <head> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- class ska vara menu-om-oss. Man sätter alltid ett - mellan varje ord. Denna bör också vara <header> istället för en <div> -->
 <div class="menu-omoss">
+
+  <!-- Här behövs ingen section, <header> kan stå helt ensam. "title" i section-taggen ska inte vara där. din class färg1 ska skrivas färg-1, sedan hade jag rekommenderat ett bättre namn på den. <center> ska ej användas -->
     <section"title">
       <header class="färg1"><u><h1><center>Café Oak</center></h1></u>   
     </section>
 
+    <!-- Du stänger aldrig denna section -->
     <section>
+        <!-- klasser börjar aldrig med stor bokstav. Det ska istället stå meny.  -->
         <header class="Meny">
+          <!-- Återigen, "Meny" tillföring inget här -->
             <section"Meny">
                 
+            <!-- Samma här med klassnamnen, ska stå färg-2, samt rekommenderat med ett bättre namn. <center> ska ej användas -->
             <header class="färg2"><h2><center>Om oss</center></h4>
+              <!-- Om du använder <strong> så behövs ej <p> -->
               <header class="färg2"><p><center><strong>Café oak is made by the Barkbound group set up by Ekan Creations!. Here you can sit, chill and talk with your friends. Or grab some delicous home made goodies to much on!</strong></center></p>
 </div>
+
+<!-- Denna div bör vara en section -->
 <div class="gotta">
                 <h2>Vår meny</h2>
+                <!-- ul-taggarna fattas här. Du blandar också <ul>, <h3>, <p> och <li> taggar i ul-listan. Varje element i en ul-lista ska alltid wrappas runt en <li> först. Till exempel: <li><h3>Drycker</h3></li> -->
                     <u><h3>Drycker</h3></u>
                         <p>våra drycker är skit bra!</p>
                         
@@ -47,11 +69,14 @@
                 <li>3. kaffe - 15Kr</li>
                 <li>4. kaffe 2 - 15Kr</li>
             </div>
+            <!-- Här avslutar du <header>, men har aldrig någon start-tagg -->
             </header> 
         </section>
 
         <section>
+          <!-- Samma här på klassnamn -->
           <div class="gotta1">
+            <!-- Samma princip i ul-listan som den ovanför -->
                         <u><h3>Gotta</h3></u>
                             <p>bs som jag har bakat eller nå idk</p>
                             
@@ -59,11 +84,13 @@
                     <li>2. [REDACTED] - 25Kr</li>
                     <li>3. unnamed bulle 2 45kr</li>
                     <li>4. bakelse - 15Kr</li>
+                    <!-- Samma med denna header som ovanför -->
                 </header>
               </div>
             </section>
 
             <section>
+              <!-- Samma princip här som i de två likadana section ovanför -->
               <div class="gotta2">
                             <li><h3>öppettider</h3></li>
                                 <p>när vi har öppet och sånt</p>
@@ -77,11 +104,14 @@
                 </section>
 
                 <section>
-                  
+                  <!-- Klassnamnet ska vara bottom-part -->
                   <header class="bottompart">
+                    <!-- Samma princip här som på andra klassnamn. Du använder ingen ul-lista, men har däremot li-taggar. <li> används alltid i en ul-lista. <center> ska ej användas. <bold> används ej heller utan det ska vara <b> -->
                     <header class="vit"><li><h2><center><bold>Hitta hit</bold></center></h2></li>
-                                  
+                                 
+                      <!-- Denna <li> är helt tom -->
                           <li></li>
+                          <!-- I alla 3 <li> nedanför har du ett extra > i slutet efter </h3> -->
                           <li><h3><center>placeholder</center></h3>></li>
                           <li><h3><center>placeholder</center></h3>></li>
                           <li><h3><center>placeholder</center></h3>></li>
@@ -94,9 +124,10 @@
   </footer>
 
 
-
+<!-- Din style ska stå i CSS-filen, inte här. Vid internal styling så skrivs den uppe i <head> -->
   <style>
 
+/* Stylingen ser överlag bra ut, du har lite empty space som går at ta bort, och jag hade rekommenderat att ha en rads space mellan varje klass */
 .menu-omoss {
   background-color: #dbc7a8;
   padding: 150px;
